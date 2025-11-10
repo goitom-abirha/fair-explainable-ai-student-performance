@@ -129,6 +129,9 @@ This project was **conceptualized, developed, and documented independently** by 
 No external supervision or institutional funding was involved.
 
 ---
+##  Research Proposal
+[![View PDF](https://img.shields.io/badge/View--PDF-Fair%20%26%20Explainable%20AI-blue)](docs/Research_Proposal_Fair_and_Explainable_AI_Final.pdf)
+---
 
 ##  References
 - Barocas, S., Hardt, M., & Narayanan, A. (2019). *Fairness and Machine Learning.*  
@@ -140,8 +143,8 @@ No external supervision or institutional funding was involved.
 
 ##  Author
 **Goitom Abirha**  
-🎓 M.Sc. in Data Science — Eastern University  
-📍 Silver Spring, Maryland, USA  
+ M.Sc. in Data Science — Eastern University  
+ Silver Spring, Maryland, USA  
 
 📧 [goitomabirha41@gmail.com](mailto:goitomabirha41@gmail.com)  
 🔗 [LinkedIn Profile](https://www.linkedin.com/in/goitom-abirha-089428397)
