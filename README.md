@@ -91,7 +91,7 @@ fair-explainable-ai-student-performance/
 
 ---
 
-## 🗓️ 7-Week Project Roadmap
+##  7-Week Project Roadmap
 | **Week** | **Focus Area** | **Deliverables / Files** |
 |-----------|----------------|--------------------------|
 | Week 1 | Project setup & documentation | Repository structure, proposal, README.md |
@@ -104,7 +104,7 @@ fair-explainable-ai-student-performance/
 
 ---
 
-## 📈 Results (Expected Outcomes)
+##  Results (Expected Outcomes)
 - Quantified bias across gender, parental education, and socioeconomic features  
 - Fairness-audited models balancing accuracy and equity  
 - Transparent SHAP and LIME explanations for model predictions  
@@ -215,4 +215,63 @@ Outputs Generated
 •	reports/initial_bias_gaps.csv — gap analysis
 •	reports/eda_bias_notes.md — auto-generated narrative report
 •	Updated notebook: 01_eda_bias_analysis.ipynb
+
+
+## Week 3 — Data Preprocessing & Feature Engineering (Final Summary)
+
+### Objective
+Prepare the Student Performance dataset for fair and interpretable machine-learning modeling by applying preprocessing, encoding, scaling, and feature engineering.
+
+---
+
+###  Key Steps Completed
+
+- **Loaded raw dataset** (`student-por.csv`)  
+- **Performed feature engineering**:
+  - Added `study_absence_interaction`
+  - Binned `age_group` into categories
+  - Created `log_absences` (log transform)
+
+- **Split features and target**:
+  - **X** = all inputs except G3  
+  - **y** = final grade (G3)
+
+- **Identified column types**:
+  - Numeric features: 15  
+  - Categorical features: 17  
+
+- **Built preprocessing pipeline** using `ColumnTransformer`:
+  - Numeric:
+    - Median imputation
+    - StandardScaler
+  - Categorical:
+    - Most-frequent imputation
+    - OneHotEncoder
+
+- **Applied preprocessing** to produce `X_processed`
+  - All features encoded & scaled consistently
+
+- **Saved processed dataset**:
+  - `processed_student_data.csv`
+
+---
+
+###  Notebook  
+🔗 **[02_data_preprocessing.ipynb](notebooks/02_data_preprocessing.ipynb)**
+
+---
+
+### Outputs Generated
+- `processed_student_data.csv`  
+- Engineered feature columns added  
+- Preprocessing pipeline updated  
+- Week 3 notebook with step-by-step markdown descriptions  
+
+---
+
+### Summary
+Week 3 delivered a complete preprocessing workflow that ensures the dataset is clean, well-structured, and ready for Week 4 model training.  
+This step strengthens fairness, reduces bias, and prepares the foundation for explainable and responsible model development.
+
+---
 
