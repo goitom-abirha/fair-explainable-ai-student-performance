@@ -274,4 +274,25 @@ Week 3 delivered a complete preprocessing workflow that ensures the dataset is c
 This step strengthens fairness, reduces bias, and prepares the foundation for explainable and responsible model development.
 
 ---
+## Week 4 — Model Training
 
+**Notebook:** `03_model_training.ipynb`  
+**Data Used:** `processed_student_data.csv`
+
+In Week 4, I trained and compared multiple machine learning models to predict students’ final grade (**G3**) using the cleaned dataset from Week 3.
+
+### Key Steps
+- Loaded processed data and created train/validation/test splits.
+- Built a baseline model (`DummyRegressor`).
+- Trained Linear Regression, Lasso, and Random Forest models.
+- Performed hyperparameter tuning with `GridSearchCV`.
+- Evaluated models using RMSE, MAE, and R².
+- Selected the best model for:
+  - **With G1 & G2**
+  - **Without G1 & G2**
+- Saved final models to the `models/` folder for use in Week 5 and Week 6.
+
+### Saved Models
+- `best_model_with_G1_G2.pkl`  
+- `best_model_without_G1_G2.pkl`
+  ```
